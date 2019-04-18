@@ -41,10 +41,15 @@ en:
 
   layouts:
     _header:
-      sample_app: "sample app"
+      sample_app: "Sample app"
       home: "Home"
       help: "Help"
-      log_in: "Log in"
+      profile : "Profile"
+      settings : "Settings"
+      log_out : "Log out"
+      log_in : "Log in"
+      account: "Account"
+      users : "Users"
 
     _footer:
       the: "The"
@@ -67,6 +72,15 @@ en:
       not_found: "Not found"
       welcome_to: "Welcome to the Sample App!"
 
+    sessions_controller:
+      invalid_email: "Invalid email/password combination"
+
   shared:
     _error_messages:
       the_form_contains: "The form contains"
+
+  sessions:
+    new:
+      log_in: "Log in"
+      new_user: "New user?"
+      sign_up_now: "Sign up now!"
