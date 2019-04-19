@@ -59,3 +59,14 @@ en:
     new:
       sign_up: "Sign up"
       this_will: "This will be a signup page for new users."
+      create_my_account: "Create my account"
+      confirmation: "Confirmation"
+
+  controllers:
+    users_controller:
+      not_found: "Not found"
+      welcome_to: "Welcome to the Sample App!"
+
+  shared:
+    _error_messages:
+      the_form_contains: "The form contains"
