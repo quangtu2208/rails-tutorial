@@ -1,0 +1,10 @@
+<% provide :title, t(".about") %>
+<h1><%= t ".about"%></h1>
+<p>
+  <%= t ".the" %>  <%= link_to Settings.railstutorial do %>
+    <i> <%= t(".rails_tutorial") %></i><% end %> <%= t ".is_a" %>
+  <%= link_to t(".book"), Settings.railstutorial_book %><%= t ".and" %>
+  <%= link_to t(".screencast_series"), Settings.screencasts %>
+  <%= link_to t(".ruby_on_rails"), Settings.rubyonrails %>.
+  <%= t ".this_is" %>.
+</p>
