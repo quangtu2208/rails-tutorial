@@ -81,9 +81,16 @@ en:
       user_deleted: "User deleted"
       delete_unsuccessful: "Delete unsuccessful"
       please_log: "Please log in."
+      please_check: "Please check your email to activate your account."
 
     sessions_controller:
       invalid_email: "Invalid email/password combination"
+      account_not_activated: "Account not activated."
+      check_your_email: "Check your email for the activation link."
+
+    account_activation:
+      account_activated: "Account activated!"
+      invalid_activation_link: "Invalid activation link"
 
   shared:
     _error_messages:
@@ -105,3 +112,18 @@ en:
 
     index:
       all_users: "All users"
+
+  user_mailer:
+    account_activation:
+      sample_app: "Sample App"
+      hi: "Hi"
+      welcome_to: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"
+
+    password_reset:
+      user_password_reset: "User#password_reset"
+
+  mailers:
+    user_mailer:
+      account_activation: "Account activation"
+
