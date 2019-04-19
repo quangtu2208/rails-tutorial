@@ -9,13 +9,13 @@ class SessionsController < ApplicationController
         params[:session][:remember_me] == "1" ? remember(user) : forget(user)
         redirect_back_or user
       else
-        message  = t ".account_not_activated"
-        message += t ".check_your_email"
+        message  = t "controllers.sessions_controller.account_not_activated"
+        message += t "controllers.sessions_controller.check_your_email"
         flash[:warning] = message
         redirect_to root_url
       end
     else
-      flash[:danger] = t ".invalid_email"
+      flash[:danger] = t "controllers.sessions_controller.invalid_email"
       render :new
     end
   end

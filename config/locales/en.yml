@@ -1,7 +1,4 @@
 en:
-  layouts:
-    application:
-      ruby: "Ruby on Rails Tutorial Sample App"
   static_pages:
     about:
       about: "About"
@@ -37,9 +34,12 @@ en:
       ruby_on_rails_tutorial: "Ruby on Rails Tutorial"
       sample_application: "sample application"
       sign_up: "Sign up now!"
+      micropost_feed: "Micropost Feed"
 
   layouts:
-    _header:
+    application:
+      ruby: "Ruby on Rails Tutorial Sample App"
+    header:
       sample_app: "Sample app"
       home: "Home"
       help: "Help"
@@ -52,7 +52,7 @@ en:
       account: "Account"
       users : "Users"
 
-    _footer:
+    footer:
       the: "The"
       ruby_on_rails_tutorial: "Ruby on Rails Tutorial"
       by: "by"
@@ -69,9 +69,16 @@ en:
       create_my_account: "Create my account"
       confirmation: "Confirmation"
 
-    _user:
+    user:
       delete: "delete"
       you_sure: "You sure?"
+
+    show:
+      microposts: "Microposts"
+
+    edit:
+      save_changes: "Save changes"
+      confirmation: "Confirmation"
 
   controllers:
     users_controller:
@@ -100,9 +107,26 @@ en:
       password_reset: "Password reset has expired."
       not_found: "Not found"
 
+    application_controller:
+      please_log_in: "Please log in."
+
+    microposts_controller:
+      micropost_created: "Micropost created!"
+      micropost_deleted: "Micropost deleted"
+      delete_unsuccessful: "Delete unsuccessful"
+
   shared:
-    _error_messages:
+    error_messages:
       the_form_contains: "The form contains"
+      error: "error"
+
+    user_info:
+      view_my_profile: "view my profile"
+      micropost: "micropost"
+
+    micropost_form:
+      compose_new: "Compose new micropost..."
+      post: "Post"
 
   sessions:
     new:
@@ -151,3 +175,18 @@ en:
     edit:
       reset_password: "Reset password"
       update_password: "Update password"
+
+  models:
+    micropost:
+      should_be: "should be less than 5MB"
+
+  microposts:
+    microposts:
+      posted: "Posted"
+      ago: "ago."
+      delete: "delete"
+      you_sure: "You sure?"
+
+  javascripts:
+    microposts:
+      maximum_file: "Maximum file size is 5MB. Please choose a smaller file."
