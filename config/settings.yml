@@ -16,3 +16,4 @@ page: 10
 time_reset_expired: 2
 microposts_max: 140
 picture_size: 5
+gravatar_for_size_show: 30
