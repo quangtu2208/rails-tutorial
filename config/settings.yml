@@ -2,5 +2,10 @@ railstutorial: "https://www.railstutorial.org/"
 railstutorial_book: "https://www.railstutorial.org/book"
 screencasts: "http://screencasts.railstutorial.org/"
 rubyonrails: "http://rubyonrails.org/"
-railstutorial_contact: " https://www.railstutorial.org/contact"
+railstutorial_contact: "https://www.railstutorial.org/contact"
 railstutorial_help: "https://www.railstutorial.org/help"
+michaelhartl: "http://www.michaelhartl.com/"
+news_railstutorial: "http://news.railstutorial.org/"
+MAX_NAME_LENGTH : 50
+MAX_EMAIL_LENGTH : 255
+MIN_PASS : 6

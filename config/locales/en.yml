@@ -38,3 +38,24 @@ en:
       ruby_on_rails_tutorial: "Ruby on Rails Tutorial"
       sample_application: "sample application"
       sign_up: "Sign up now!"
+
+  layouts:
+    _header:
+      sample_app: "sample app"
+      home: "Home"
+      help: "Help"
+      log_in: "Log in"
+
+    _footer:
+      the: "The"
+      ruby_on_rails_tutorial: "Ruby on Rails Tutorial"
+      by: "by"
+      michael_hartl: "Michael Hartl"
+      about: "About"
+      contact: "Contact"
+      news: "News"
+
+  users:
+    new:
+      sign_up: "Sign up"
+      this_will: "This will be a signup page for new users."
