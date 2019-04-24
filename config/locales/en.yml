@@ -51,6 +51,7 @@ en:
       account: "Account"
       users : "Users"
 
+
     _footer:
       the: "The"
       ruby_on_rails_tutorial: "Ruby on Rails Tutorial"
@@ -84,3 +85,4 @@ en:
       log_in: "Log in"
       new_user: "New user?"
       sign_up_now: "Sign up now!"
+      remember_me: "Remember me on this computer"
