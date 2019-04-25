@@ -1,8 +1,7 @@
 en:
-  app:
-    helpers:
-      ruby_on_rails_tutorial_sample_app: "Ruby on Rails Tutorial Sample App"
-
+  layouts:
+    application:
+      ruby: "Ruby on Rails Tutorial Sample App"
   static_pages:
     about:
       about: "About"
@@ -44,13 +43,14 @@ en:
       sample_app: "Sample app"
       home: "Home"
       help: "Help"
+      log_in: "Log in"
+      users: "Users"
       profile : "Profile"
       settings : "Settings"
       log_out : "Log out"
       log_in : "Log in"
       account: "Account"
       users : "Users"
-
 
     _footer:
       the: "The"
@@ -60,6 +60,7 @@ en:
       about: "About"
       contact: "Contact"
       news: "News"
+      users : "Users"
 
   users:
     new:
@@ -68,10 +69,18 @@ en:
       create_my_account: "Create my account"
       confirmation: "Confirmation"
 
+    _user:
+      delete: "delete"
+      you_sure: "You sure?"
+
   controllers:
     users_controller:
       not_found: "Not found"
       welcome_to: "Welcome to the Sample App!"
+      profile_updated: "Profile updated"
+      user_deleted: "User deleted"
+      delete_unsuccessful: "Delete unsuccessful"
+      please_log: "Please log in."
 
     sessions_controller:
       invalid_email: "Invalid email/password combination"
@@ -86,3 +95,13 @@ en:
       new_user: "New user?"
       sign_up_now: "Sign up now!"
       remember_me: "Remember me on this computer"
+      form : "form"
+
+    edit:
+      edit_user: "Edit user"
+      save_changes: "Save changes"
+      update_your_profile: "Update your profile"
+      change: "Change"
+
+    index:
+      all_users: "All users"

@@ -11,3 +11,5 @@ MAX_EMAIL_LENGTH: 255
 MIN_PASS: 6
 gravatar_for_user: 80
 gravatar_for_size: 50
+gravatar_emails: "http://gravatar.com/emails"
+page: 10

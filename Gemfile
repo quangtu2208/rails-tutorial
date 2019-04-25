@@ -5,6 +5,7 @@ ruby "2.6.1"
 
 gem "rails", "~> 5.2.3"
 gem "bcrypt"
+gem "ffaker"
 gem "bootstrap-sass", "3.3.7"
 gem "jquery-rails"
 gem "sqlite3"
@@ -20,6 +21,8 @@ gem "jbuilder", "~> 2.5"
 gem "bootsnap", ">= 1.1.0", require: false
 
 gem "config"
+gem "kaminari"
+gem "bootstrap-kaminari-views"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
