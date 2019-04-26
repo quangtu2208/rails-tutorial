@@ -5,10 +5,12 @@ class UsersController < ApplicationController
   before_action :load_user, except: %i(new create index)
 
   def index
-    @users = User.list.page(params[:page]).per Settings.page
+    @users = User.list.activated.order(:name).page(params[:page]).per Settings.page
   end
 
-  def show; end
+  def show
+    redirect_to root_url and return unless @user.activated
+  end
 
   def new
     @user = User.new
@@ -73,13 +75,4 @@ class UsersController < ApplicationController
   def admin_user
     redirect_to(root_url) unless current_user.admin?
   end
-
-  def logged_in_user
-    unless logged_in?
-      store_location
-      flash[:danger] = t ".please_log"
-      redirect_to login_url
-    end
-  end
-
 end
