@@ -39,6 +39,7 @@ en:
   layouts:
     application:
       ruby: "Ruby on Rails Tutorial Sample App"
+
     header:
       sample_app: "Sample app"
       home: "Home"
@@ -80,6 +81,16 @@ en:
       save_changes: "Save changes"
       confirmation: "Confirmation"
 
+    show_follow:
+      view_my_profile: "view my profile"
+      microposts: "Microposts:"
+
+    unfollow:
+      unfollow: "Unfollow"
+
+    follow:
+      follow: "Follow"
+
   controllers:
     users_controller:
       not_found: "Not found"
@@ -89,6 +100,8 @@ en:
       delete_unsuccessful: "Delete unsuccessful"
       please_log: "Please log in."
       please_check: "Please check your email to activate your account."
+      following: "Following"
+      followers: "Followers"
 
     sessions_controller:
       invalid_email: "Invalid email/password combination"
@@ -127,6 +140,10 @@ en:
     micropost_form:
       compose_new: "Compose new micropost..."
       post: "Post"
+
+    stats:
+      following: "following"
+      followers: "followers"
 
   sessions:
     new:
