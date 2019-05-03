@@ -10,6 +10,7 @@ class UsersController < ApplicationController
 
   def show
     redirect_to root_url and return unless @user.activated
+    @microposts = @user.microposts.order_by_time.page(params[:page]).per Settings.page
   end
 
   def new
@@ -20,7 +21,7 @@ class UsersController < ApplicationController
     @user = User.new user_params
     if @user.save
       @user.send_activation_email
-      flash[:info] = t ".please_check"
+      flash[:info] = t "controllers.users_controller.please_check"
       redirect_to root_url
     else
       render :new
@@ -31,7 +32,7 @@ class UsersController < ApplicationController
 
   def update
     if @user.update user_params
-      flash[:success] = t ".profile_updated"
+      flash[:success] = t "controllers.users_controller.profile_updated"
       redirect_to @user
     else
       render :edit
@@ -40,9 +41,9 @@ class UsersController < ApplicationController
 
   def destroy
     if @user.destroy
-      flash[:success] = t ".user_deleted"
+      flash[:success] = t "controllers.users_controller.user_deleted"
     else
-      flash[:danger] = t ".delete_unsuccessful"
+      flash[:danger] = t "controllers.users_controller.delete_unsuccessful"
     end
     redirect_to users_url
   end
@@ -50,9 +51,8 @@ class UsersController < ApplicationController
   private
 
   def load_user
-    @user = User.find_by id: params[:id]
-    return if @user
-    flash[:error] = t ".not_found"
+    return if @user = User.find_by(id: params[:id])
+    flash[:error] = t "controllers.users_controller.not_found"
     redirect_to root_path
   end
 
@@ -64,7 +64,7 @@ class UsersController < ApplicationController
   def logged_in_user
     store_location
     return if logged_in?
-    flash[:danger] = t ".please_log"
+    flash[:danger] = t "controllers.users_controller.please_log"
     redirect_to login_url
   end
 

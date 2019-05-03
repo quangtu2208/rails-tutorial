@@ -6,6 +6,8 @@ ruby "2.6.1"
 gem "rails", "~> 5.2.3"
 gem "bcrypt"
 gem "ffaker"
+gem "carrierwave", "1.2.2"
+gem "mini_magick", "4.7.0"
 gem "bootstrap-sass", "3.3.7"
 gem "jquery-rails"
 gem "sqlite3"
@@ -43,6 +45,7 @@ end
 
 group :production do
   gem "pg", "0.20.0"
+  gem "fog", "1.42"
 end
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
